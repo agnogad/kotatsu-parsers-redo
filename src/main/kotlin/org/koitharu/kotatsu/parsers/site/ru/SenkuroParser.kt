@@ -237,7 +237,7 @@ internal class SenkuroParser(context: MangaLoaderContext) :
 				branch = null,
 				source = source,
 			)
-		}
+		}.asReversed()
 	}
 
 	private suspend fun fetchLabelTags(): Set<MangaTag> {
